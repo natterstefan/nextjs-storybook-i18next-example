@@ -1,22 +1,33 @@
+# Next.js-Storybook-i18next Example
 
-## README
+This POC demonstrates a full working setup of Next.js, Storybook and i18next
+(with [next-i18next](https://github.com/isaachinman/next-i18next)) and Webpack@5.
+It uses [storybook-addon-i18next](https://www.npmjs.com/package/storybook-addon-i18next).
 
-This is a POC demonstrating a full working setup of nextjs, storybook and i18n with <a href="https://github.com/isaachinman/next-i18next">next-i18next</a>. It uses the <a href="https://www.npmjs.com/package/storybook-addon-i18next">storybook-addon-i18next</a>. 
+## How to start
 
-### To Run
-**Storybook**
+### Storybook
+
+```bash
+yarn # or npm i
+yarn storybook # or npm run storybook
 ```
-npm i
-npm run storybook
+
+### Next.js
+
+```bash
+yarn # or npm i
+yarn dev # or npm run dev
 ```
-**Nextjs**
-in a separate terminal
-```
-npm i
-npm run dev
-```
-for nextjs add `/de` to the path to see the German version.
-### Examples
+
+Add `/de` to the URL to see the German version.
+
+## Example
+
 Click on the globe to switch languages.
-<img src='./example_english.png'/>
-<img src='./example_deutsch.png'/>
+
+![Example](assets/example.gif)
+
+## Thank you
+
+Inspired by and building on [Piepongwong's POC]( https://github.com/Piepongwong/gatsby_nextjs_storybook_i18n_scaffolding).

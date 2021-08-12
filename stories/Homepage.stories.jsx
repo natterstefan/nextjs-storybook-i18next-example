@@ -1,7 +1,7 @@
 import { Homepage } from '../pages/index';
 
 export default {
-  title: 'Organisms/Homepage',
+  title: 'Page/Homepage',
   component: Homepage
 };
 

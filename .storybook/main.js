@@ -1,4 +1,7 @@
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: [
     "../stories/**/*.stories.mdx",
     "../stories/**/*.stories.@(js|jsx|ts|tsx)"
@@ -11,9 +14,12 @@ module.exports = {
   webpackFinal: config => {
     return {
       ...config,
-      node: {
-        ...config.node,
-        fs: "empty" // fix
+      resolve: {
+        ...config.resolve,
+        fallback: {
+          ...config.resolve?.fallback,
+          fs: false,
+        }
       }
     };
   }
